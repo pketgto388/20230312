@@ -56,6 +56,9 @@ a {
 .form-control:focus::-moz-placeholder {
   color: rgb(204, 204, 204);
 }
+.form-control:focus:-ms-input-placeholder {
+  color: rgb(204, 204, 204);
+}
 .form-control:focus::placeholder {
   color: rgb(204, 204, 204);
 }
@@ -266,6 +269,7 @@ body {
   position: relative;
   padding: 20px 0;
   margin-bottom: 15px;
+  z-index: 2;
 }
 .flow .flow-item:nth-child(even) .flow-text {
   right: 50%;
@@ -421,5 +425,15 @@ body {
   .flow .flow-item {
     justify-content: flex-start;
     padding-left: 12px;
+  }
+  .flow .flow-item:nth-child(even) .flow-text {
+    right: unset;
+    left: 0;
+    margin-right: 0;
+    margin-left: 72px;
+    text-align: left;
+  }
+  .flow .flow-text {
+    left: 0;
   }
 }/*# sourceMappingURL=layout_1_rwd.css.map */
